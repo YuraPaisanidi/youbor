@@ -3,29 +3,56 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	// ----------------------SLIDER-hero----------------------
-	// 	var mySwiper = new Swiper('.hero__slider', {
-	// 		slidesPerView: 1,
-	// 		spaceBetween: 30,
-	// 		loop: true,
-	// 		effect: 'fade',
-	// 		autoplay: {
-	// 			delay: 5000,
-	// 		},
-	// 		pagination: {
-	// 			el: '.hero__pagination',
-	// 			clickable: 'true',
-	// 		},
-	// 		navigation: {
-	// 			nextEl: '.hero__next',
-	// 			prevEl: '.hero__prev',
-	// 		},
-	// 		breakpoints: {
-	// 			320: {
-	// 				slidesPerView: 2,
-	// 				spaceBetween: 20
-	// 			},
-	// 		}
-	// 	});
+		var mySwiper = new Swiper('.heroSlider', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			// effect: 'fade',
+			// autoplay: {
+			// 	delay: 5000,
+			// },
+			// pagination: {
+			// 	el: '.hero__pagination',
+			// 	clickable: 'true',
+			// },
+			// navigation: {
+			// 	nextEl: '.hero__next',
+			// 	prevEl: '.hero__prev',
+			// },
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 2,
+			// 		spaceBetween: 20
+			// 	},
+			// }
+		});
+
+
+	//-------------------------Celeb-Slider---------------------
+	var mySwiper = new Swiper('.celebSlider', {
+		slidesPerView: 2,
+		spaceBetween: 5,
+		loop: true,
+		navigation: {
+			nextEl: '.celebBtnNext',
+			prevEl: '.celebBtnPrev',
+		},
+		breakpoints: {
+			576: {
+				slidesPerView: 3,
+			},
+			767: {
+				slidesPerView: 4,
+			},
+			992: {
+				slidesPerView: 5,
+			},
+			1200: {
+				slidesPerView: 7,
+			},
+		}
+	});
+
 
 	//----------------------SCROLL-----------------------
 		const scrollTo = (scrollTo) => {

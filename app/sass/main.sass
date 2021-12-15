@@ -19,6 +19,16 @@
 	+r(576)
 		max-width: 480px
 
+.h2
+	font-size: 36px
+	font-weight: 700
+	color: $dark
+
+.h3
+	font-size: 24
+	font-weight: 700
+	color: #fff
+
 // -----BUTTON-----
 .btn
 	position: relative
@@ -125,19 +135,19 @@
 
 
 .header
-	position: fixed
+	position: absolute
 	top: 0
 	right: 0
 	left: 0
-	padding: 20px 0
-	background: #000
+	padding: 10px 0
+	z-index: 10
 
 	&__container
 		+between
 
 		+r(767)
 			flex-direction: column
-			gap: 15px
+			gap: 10px
 
 	&__wrap
 		+between
@@ -161,6 +171,7 @@
 	&__search
 		max-width: 665px
 		width: 100%
+		position: relative
 
 		+r(1200)
 			max-width: 400px
@@ -178,12 +189,15 @@
 			+r(767)
 				display: block
 
-
 		input
 			height: 50px
 			width: 100%
 			border-radius: 5px
 			padding: 0 20px
+			background-image: url(../img/search.svg)
+			background-repeat: no-repeat
+			background-position: 97% 50%
+			border: none
 
 			+r(767)
 				height: 40px
@@ -238,14 +252,242 @@
 			font-size: 14px
 			height: 40px
 
+.main
 
-.section
-	padding: 150px 0
+.hero
+	overflow: hidden
+	z-index: 1
+	border-bottom-left-radius: 10px
+	border-bottom-right-radius: 10px
+
+	&__slide
+		// background: url(../img/hero_bg_1.jpg)
+		// background-repeat: no-repeat
+		// background-size: cover
+		flex-direction: column
+		align-items: center
+		padding-top: 135px
+		position: relative
+
+		&::after
+			content: url(../img/hero_bg_1.jpg)
+			position: absolute
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: -1
+
+	&__text
+		display: flex
+		align-items: center
+		gap: 45px
+		margin-bottom: 55px
+
+	&__title
+		color: #fff
+		font-size: 46px
+		
+		span
+			color: $accent2
+
+	&__img
+		position: relative
+		max-width: 1200px
+		width: 100%
+
+		img
+			object-fit: cover
+			display: block
+			width: 85%
+			// height: 100%
+
+		&::before
+			position: absolute
+			content: url(../img/decor.png)
+			top: 0
+			right: 0
+
+.celeb
+	padding-top: 200px
+	padding-bottom: 70px
+
+	&__title
+		text-align: center
+		margin-bottom: 70px
+
+	&__container
+		overflow: hidden
+	
+	&__slider
+		// overflow: hidden
+		position: relative
+
+	&__btn
+		&_prev
+			position: absolute
+			top: 40%
+			left: -15px
+
+		&_next
+			position: absolute
+			top: 40%
+			right: -15px
+
+	&__btn
+		&_prev,
+		&_next
+			path
+				+transition
+
+			&:hover
+				path
+					stroke: $dark
+
+	&__slide
+		display: flex
+		flex-direction: column
+		align-items: center
+		gap: 20px
+		+transition
+
+		&:hover
+			cursor: pointer
+			
+			.celeb__name
+				color: $dark
+
+			.celeb__img
+				filter: drop-shadow(0px 4px 9px rgba(65, 25, 107, 0.4))
+				border-color: $accent
+
+				&::after
+					opacity: 1
+					visibility: visible
+
+	&__img
+		width: 135px
+		height: 135px
+		overflow: hidden
+		border-radius: 100%
+		border: 5px solid transparent
+		position: relative
+		+transition
+
+		&::after
+			content: url(../img/play.svg)
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			opacity: 0
+			visibility: hidden
+			+transition
+
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+
+	&__name
+		font-weight: 700
+		color: $light
+		+transition
+
+.star
+	padding-top: 70px
+	padding-bottom: 125px
+	display: flex
+	flex-direction: column
 
 	&__container
 		display: flex
-		flex-wrap: wrap
+		flex-direction: column
+		align-items: center
+
+	&__title
+		margin-bottom: 60px
+		text-align: center
+
+	&__filter
+		display: flex
+		align-items: center
 		gap: 15px
+		margin-bottom: 60px
+
+		.toggle
+
+			input
+				display: none
+
+			.label
+				// width: 45px
+				height: 35px
+				padding: 0 15px
+				background: $light
+				font-weight: 700
+				border-radius: 5px
+				display: flex
+				align-items: center
+				justify-content: center
+				margin-bottom: 0
+
+				&:hover
+					cursor: pointer
+
+			input[type="checkbox"]
+				display: none
+
+			input[type="checkbox"]:checked + label
+				background-color: $accent
+				color: #fff
+
+			input[type="checkbox"] + label
+
+	&__content
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		gap: 20px
+
+	&__item
+		position: relative
+		display: flex
+		flex-direction: column
+		background: #0D0D16
+		border-radius: 5px
+		overflow: hidden
+		width: 100%
+		z-index: 1
+
+	&__img
+		position: relative
+		display: flex
+		width: 100%
+		overflow: hidden
+
+		&::after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			z-index: 2
+			background: linear-gradient(180deg, #0D0D16 0%, rgba(0, 0, 0, 0) 41.74%)
+			transform: rotate(180deg)
+
+	&__info
+		z-index: 3
+		padding: 10px
+
+	&__desc
+		font-size: 12px
+		color: $text
+	
+	&__price
+		font-size: 24px
+		font-weight: 700
+		color: $accent2
+
+
+
 
 
 .footer
@@ -593,3 +835,12 @@
 				max-width: 50%
 
 
+.swiper 
+	width: 100%
+	height: 100%
+
+.swiper-slide
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
