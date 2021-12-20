@@ -810,6 +810,12 @@
 		width: 100%
 		position: relative
 
+		+r(992)
+			padding: 30px 50px
+
+		+r(480)
+			padding: 30px
+
 		&::before
 			content: url(../img/decor.svg)
 			position: absolute
@@ -821,6 +827,9 @@
 			position: absolute
 			top: 20%
 			left: 82%
+
+			+r(992)
+				display: none
 
 	&__links
 		display: flex
@@ -841,6 +850,9 @@
 			color: $text
 			font-size: 24px
 			font-weight: 700
+
+			+r(576)
+				font-size: 18px
 
 			&::after
 				content: ''
@@ -994,6 +1006,12 @@
 		margin-bottom: 10px
 		width: 100%
 
+		&--checkbox
+			margin-top: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+
 	&__label
 		font-size: 16px
 		font-weight: 500
@@ -1108,51 +1126,33 @@
 				max-width: 100%
 
 	&__checkbox
-		margin-top: 30px
-		&._error
-			.form__checkbox_label::before
-				box-shadow: 0 0 7px 0 rgba(red, 1)
+		display: flex
+		align-items: center
+		justify-content: center
+		gap: 10px
+		max-width: 100%
+		width: 100%
+
+		label
+			margin-bottom: 0 !important
+			color: $text
+			width: 120px
+
+			a
+				color: $text
+				text-decoration: underline
 
 		&_label
 			position: relative
-			width: 100%
+			width: 480px
 			font-size: 16px
 			line-height: 140%
 			display: inline-flex
 			align-items: center
-			justify-content: center
 			cursor: pointer
-			color: $dark
 
-			&::before
-				content: ''
-				align-self: flex-start
-				flex: 0 0 16px
-				height: 16px
-				background-color: $accent
-				border-radius: 4px
-				margin-right: 10px
-				+transition
-
-			&::after
-				content: ''
-				width: 10px
-				height: 10px
-				position: absolute
-				top: 3px
-				left: 120px
-				background-color: #fff
-				transform: scale(0)
-				+transition
-
-			a
-				color: $text
-
-		&_input
-			display: none
-
-			&:checked + .form__checkbox_label::after
-				transform: scale(1)
+			+r(767)
+				width: 100%
 
 	&__btn
 		order: 1
