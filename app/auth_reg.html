@@ -62,8 +62,8 @@
 			<div class="auth__container container">
 				<div class="auth__wrap">
 					<div class="auth__links">
-						<a href="#" class="active"><span>Вход</span></a>
-						<a href="#"><span>Регистрация</span></a>
+						<a href="#"><span>Вход</span></a>
+						<a href="#" class="active"><span>Регистрация</span></a>
 					</div>
 					<form action="#" class="auth__form">
 						<div class="form__item">
@@ -71,7 +71,19 @@
 						</div>
 
 						<div class="form__item">
+							<input type="email" class="auth__input form__input _req" placeholder="Email">
+						</div>
+
+						<div class="form__item">
 							<input type="password" class="auth__input form__input _req" placeholder="Пароль">
+						</div>
+
+						<div class="form__item">
+							<input type="password" class="auth__input form__input _req" placeholder="Подтвердите пароль">
+						</div>
+
+						<div class="form__item">
+							<input class="auth__input form__input _req" type="text" onfocusin="(this.type='date')" onfocusout="(this.type='text')"  id="birthDate" placeholder="День рождения"> 
 						</div>
 
 						<div class="form__item form__item--checkbox">
@@ -82,7 +94,7 @@
 						</div>
 
 						<div class="form__btn">
-							<button type="submit" class="auth__btn btn">Войти</button>
+							<button type="submit" class="auth__btn btn">Регистрация</button>
 						</div>
 					</form>
 				</div>
