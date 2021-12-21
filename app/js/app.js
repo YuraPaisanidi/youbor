@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	// ----------------------SLIDER-hero----------------------
 		var mySwiper = new Swiper('.heroSlider', {
 			slidesPerView: 1,
-			spaceBetween: 30,
+			// spaceBetween: 30,
 			loop: true,
 			// effect: 'fade',
 			// autoplay: {
