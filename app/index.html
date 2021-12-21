@@ -64,7 +64,7 @@
 					<div class="swiper-slide hero__slide heroSlide">
 						<div class="hero__text">
 							<h1 class="h1 hero__title">Что такое <span>youbor?</span></h1>
-							<a href="#" class="hero__btn btn">Узнать</a>
+							<a href="#" class="hero__btn btn modal__edits">Узнать</a>
 						</div>
 						<div class="hero__img">
 							<img src="img/hero_1.jpg" alt="">
@@ -73,7 +73,7 @@
 					<div class="swiper-slide hero__slide heroSlide">
 						<div class="hero__text">
 							<h1 class="h1 hero__title">Что такое <span>youbor?</span></h1>
-							<a href="#" class="hero__btn btn">Узнать</a>
+							<a href="#" class="hero__btn btn modal__edits">Узнать</a>
 						</div>
 						<div class="hero__img">
 							<img src="img/hero_1.jpg" alt="">
@@ -82,7 +82,7 @@
 					<div class="swiper-slide hero__slide heroSlide">
 						<div class="hero__text">
 							<h1 class="h1 hero__title">Что такое <span>youbor?</span></h1>
-							<a href="#" class="hero__btn btn">Узнать</a>
+							<a href="#" class="hero__btn btn modal__edits">Узнать</a>
 						</div>
 						<div class="hero__img">
 							<img src="img/hero_1.jpg" alt="">
@@ -439,176 +439,85 @@
 	<!-- MODAL -->
 
 	<div class="modal" id="modal__edits">
-		<form action="#" class="modal__form form" method="POST">
+		<div class="modal__wrap">
 
 			<button class="close modal__close" type="button">
 				<span></span>
 				<span></span>
 			</button>
 
-			<h3 class="form__title">Заказать звонок</h3>
+			<h3 class="h3 modal__title">Что такое <span>youbor?</span></h3>
 
-			<input type="hidden" name="subject" value="Заказать звонок">
-
-			<div class="form__item">
-				<label for="formName" class="form__label">Имя*</label>
-				<input id="formName" type="text" name="name" placeholder="Имя" class="form__input _req">
+			<div class="modal__text">
+				<p class="modal__subtitle">
+					Youbor – это сайт для заказа персональных видео от звёзд шоу-бизнеса, 
+					ТВ и кино, спорта, блогеров, ведущих и комиков.
+				</p>
+	
+				<span class="modal__quest">Как работает сервис? </span>
+				<p class="modal__answer">
+					Чтобы заказать видео от звезды, больше не нужно писать ей в direct, ждать и 
+					надеяться, что Ваше сообщение увидят. На платформе достаточно пройти 4 простых шага:
+				</p>
+	
+				<span class="modal__quest">• Выберите знаменитость</span>
+				<p class="modal__answer">
+					Воспользуйтесь поиском, если знаете, кто тебе нужен, или воспользуйтесь 
+					категориями, если еще не определились.
+				</p>
+	
+				<span class="modal__quest">• Опишите, что хотели бы услышать</span>
+				<p class="modal__answer">
+					Заполните заявку, укажите, для кого видео, с чем поздравить или что нужно сказать. 
+					Рекомендуем детально рассказать об адресате видео, его хобби. 
+					Так звезда сможет еще больше персонализировать поздравление!
+				</p>
+				
+				<span class="modal__quest">• Проверьте и оплатите заказ.</span>
+				<p class="modal__answer">
+					Внимательно проверьте всю информацию перед отправкой. 
+					Если все верно – нажмите кнопку “Оплатить”. 
+				</p>
+				
+				<span class="modal__quest">• Получите видео и сделайте подарок.</span>
+				<p class="modal__answer">
+					В течении недели знаменитость запишет видео и Вы получите его на свой телеграм. 
+					Как подарить – дело фантазии. Можете отправить по, Telegram или Whatsapp, 
+					а можете в разгар праздника включить на большом
+				</p>
+				<span class="modal__quest">Как работает сервис? </span>
+				<p class="modal__answer">
+					Чтобы заказать видео от звезды, больше не нужно писать ей в direct, ждать и 
+					надеяться, что Ваше сообщение увидят. На платформе достаточно пройти 4 простых шага:
+				</p>
+	
+				<span class="modal__quest">• Выберите знаменитость</span>
+				<p class="modal__answer">
+					Воспользуйтесь поиском, если знаете, кто тебе нужен, или воспользуйтесь 
+					категориями, если еще не определились.
+				</p>
+	
+				<span class="modal__quest">• Опишите, что хотели бы услышать</span>
+				<p class="modal__answer">
+					Заполните заявку, укажите, для кого видео, с чем поздравить или что нужно сказать. 
+					Рекомендуем детально рассказать об адресате видео, его хобби. 
+					Так звезда сможет еще больше персонализировать поздравление!
+				</p>
+				
+				<span class="modal__quest">• Проверьте и оплатите заказ.</span>
+				<p class="modal__answer">
+					Внимательно проверьте всю информацию перед отправкой. 
+					Если все верно – нажмите кнопку “Оплатить”. 
+				</p>
+				
+				<span class="modal__quest">• Получите видео и сделайте подарок.</span>
+				<p class="modal__answer">
+					В течении недели знаменитость запишет видео и Вы получите его на свой телеграм. 
+					Как подарить – дело фантазии. Можете отправить по, Telegram или Whatsapp, 
+					а можете в разгар праздника включить на большом
+				</p>
 			</div>
 
-			<div class="form__item">
-				<label for="formPhone" class="form__label">Телефон*</label>
-				<input id="formPhone" type="tel" name="phone" placeholder="Телефон" class="form__input _req">
-			</div>
-
-			<div class="form__item">
-				<label for="formMail">Почта*</label>
-				<input id="formMail" type="email" name="mail" placeholder="Почта" class="form__input _req _email">
-			</div>
-
-			<div class="form__item">
-				<div class="form__label">Левша или правша?</div>
-				<div class="form__options">
-					<div class="form__options_item">
-						<input id="formRigth" type="radio" value="raight" name="hand" class="form__options_input" checked>
-						<label for="formRigth" class="form__options_label"><span>Правша</span></label>
-					</div>
-					<div class="form__options_item">
-						<input id="formLeft" type="radio" value="left" name="hand" class="form__options_input">
-						<label for="formLeft" class="form__options_label"><span>Левша</span></label>
-					</div>
-				</div>
-			</div>
-
-			<div class="form__item">
-				<label for="formMessage" class="form__label">Сообщение</label>
-				<textarea id="formMessage" name="message" class="form__textarea"></textarea>
-			</div>
-
-			<div class="form__item">
-				<label for="formAge" class="form__label">Возраст:</label>
-				<select id="formAge" name="age"  class="form__select">
-					<option value="18" selected="selected">18</option>
-					<option value="25">25</option>
-					<option value="30">30</option>
-					<option value="50">50</option>
-				</select>
-			</div>
-
-			<div class="form__item">
-				<div class="form__label">Прикрепить фото:</div>
-				<div class="form__file formImgFile">
-					<div class="form__file_item">
-						<input accept=".jpg, .png, .gif, .ico" type="file" name="image" class="formImage form__file_input">
-						<label class="formLebel form__file_button btn">Выбрать</label>
-					</div>
-					<div class="formPreview form__file_preview"></div>
-				</div>
-			</div>
-
-			<div class="form__item">
-				<div class="form__checkbox">
-					<input id="formAgreement" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-					<label for="formAgreement" class="form__checkbox_label"><span>Персональные данные <a href="#">Файл</a></span></label>
-				</div>
-			</div>
-
-			<div class="form__btn">
-				<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
-			</div>
-
-		</form>
-	</div>
-
-	<div class="modal" id="modal__add">
-		<form action="#" class="modal__form form" method="POST">
-
-			<button class="close modal__close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-
-			<h3 class="form__title">Добавить елемент в слайдер</h3>
-
-			<input type="hidden" name="subject" value="Добавить елемент в слайдер">
-
-			<div class="form__item">
-				<label for="formName2" class="form__label">Имя*</label>
-				<input id="formName2" type="text" name="name" placeholder="Имя" class="form__input _req">
-			</div>
-
-			<div class="form__item">
-				<label for="formPhone2" class="form__label">Телефон*</label>
-				<input id="formPhone2" type="tel" name="phone" placeholder="Телефон" class="form__input _req">
-			</div>
-
-			<div class="form__item">
-				<label for="formMail2">Почта*</label>
-				<input id="formMail2" type="email" name="mail" placeholder="Почта" class="form__input _req">
-			</div>
-
-			<div class="form__item">
-				<div class="form__label">Левша или правша?</div>
-				<div class="form__options">
-					<div class="form__options_item">
-						<input id="formRigth2" type="radio" value="raight" name="hand" class="form__options_input" checked>
-						<label for="formRigth2" class="form__options_label"><span>Правша</span></label>
-					</div>
-					<div class="form__options_item">
-						<input id="formLeft2" type="radio" value="left" name="hand" class="form__options_input">
-						<label for="formLeft2" class="form__options_label"><span>Левша</span></label>
-					</div>
-				</div>
-			</div>
-
-			<div class="form__item">
-				<label for="formMessage2" class="form__label">Сообщение</label>
-				<textarea id="formMessage2" name="message" class="form__textarea"></textarea>
-			</div>
-
-			<div class="form__item">
-				<label for="formAge2" class="form__label">Возраст:</label>
-				<select id="formAge2" name="age" class="form__select">
-					<option value="18" selected="selected">18</option>
-					<option value="25">25</option>
-					<option value="30">30</option>
-					<option value="50">50</option>
-				</select>
-			</div>
-
-			<div class="form__item">
-				<div class="form__label">Прикрепить фото:</div>
-				<div class="form__file formImgFile">
-					<div class="form__file_item">
-						<input accept=".jpg, .png, .gif, .ico" type="file" name="image" class="formImage form__file_input">
-						<label class="formLebel form__file_button btn">Выбрать</label>
-					</div>
-					<div class="formPreview form__file_preview"></div>
-				</div>
-			</div>
-
-			<div class="form__item">
-				<div class="form__checkbox">
-					<input id="formAgreement1" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-					<label for="formAgreement1" class="form__checkbox_label"><span>Персональные данные <a href="#">Файл</a></span></label>
-				</div>
-			</div>
-
-			<div class="form__btn">
-				<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
-			</div>
-
-		</form>
-	</div>
-
-	<div class="modal" id="modal__thanks">
-		<div class="modal__form">
-			<button class="close modal__close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-
-			<h3>Спасибо за доверие!</h3>
-			<p>Мы обязательно с вами свяжемся!</p>
 		</div>
 	</div>
 
