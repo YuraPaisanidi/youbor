@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	//-------------------------Celeb-Slider---------------------
 	var mySwiper = new Swiper('.celebSlider', {
 		slidesPerView: 2,
-		spaceBetween: 5,
+		spaceBetween: 30,
 		loop: true,
 		navigation: {
 			nextEl: '.celebBtnNext',
